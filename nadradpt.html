@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadra Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 0 1px #e1f0ff;
+            border: 1px solid #e1f0ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0e86e8;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-fields input {
+            flex: 1;
+        }
+
+        .placeholder-text {
+            font-size: 12px;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #0e86e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 120px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0a6dc2;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>National Database And Registration Authority</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="reason">Reason for appointment</label>
+                <input type="text" id="reason" name="reason">
+            </div>
+            
+            <div class="form-group">
+                <label for="when">When</label>
+                <input type="datetime-local" id="when" name="when">
+            </div>
+            
+            <div class="form-group">
+                <label>Your Name</label>
+                <div class="name-fields">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email">
+                <div class="placeholder-text">name@example.com</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="details">Please provide additional information in detail</label>
+                <textarea id="details" name="details"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
